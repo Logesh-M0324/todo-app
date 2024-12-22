@@ -1,8 +1,5 @@
-import express from "express";
+import { app } from "./app.js";
 
-const app = express();
- 
-app.set("view-engine","ejs");
+const PORT = process.env.PORT || 8000;
 
-
-app.listen(8000,()=>console.log("server is running in port 8000"));
+app.listen(PORT,()=>console.log("server is running in port 8000"));
